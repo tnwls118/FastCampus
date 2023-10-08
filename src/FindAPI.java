@@ -5,5 +5,7 @@ public class FindAPI {
         System.out.println("s = " + s);
         System.out.println(s.charAt(0));
         System.out.println(s.length());
+
+
     }
 }
