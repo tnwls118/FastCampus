@@ -24,7 +24,7 @@ public class Book {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             } else {
-                System.out.println("잘못된 입력입니다. 'book1', 'book2', 또는 '종료' 중 하나를 입력하세요.");
+                System.out.println("잘못된 입력입니다. 입력 문구를 재확인 해주세요.");
             }
             scanner.nextLine();
         }
