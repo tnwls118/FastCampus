@@ -31,7 +31,6 @@ public class Book {
         scanner.close();
     }
 }
-
 class BookDetail {
     private String 제목;
     private int 가격;
