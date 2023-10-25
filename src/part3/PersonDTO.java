@@ -8,7 +8,7 @@ public class PersonDTO {
     public String phone;
 
 
-    PersonDTO(String name, int age, String phone) {
+    public PersonDTO(String name, int age, String phone) {
         this.name = name;
         this.age = age;
         this.phone = phone;
