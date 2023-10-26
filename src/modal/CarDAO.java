@@ -32,12 +32,23 @@ public class CarDAO {
                 car.setCarColor(carcolor);
                 car.setCarModel(carmodel);
                 car.setKm(carkm);
+                car.setNum(nextCarnumber);
 
-                System.out.println(nextCarnumber+"번째 차량 정보가 등록되었습니다.");
+                System.out.println(nextCarnumber + "번째 차량 정보가 등록되었습니다.");
                 carArray.add(car);
                 nextCarnumber++;
+                //list 기능 구현 필요
+            } else if (cdm.equals("list")) {
+                if (carArray.isEmpty()) {
+                    System.out.println("생성된 차량 정보가 없습니다.");
+                } else {
+                    for (int i = 0; i < carArray.size(); i++) {
+                        System.out.println(carArray.get(i) + "\n");
+                    }
+                }
+
             }
-            //list 기능 구현 필요
+
             //update 기능 구현 필요
             //delete 기능 구현 필요
 
@@ -45,7 +56,7 @@ public class CarDAO {
             else if (cdm.equals("break")) {
                 System.out.println("프로그램을 종료합니다.");
                 break;
-            }else {
+            } else {
                 System.out.println("등록된 명령문이 아닙니다.");
             }
 
