@@ -35,6 +35,9 @@ public class carDTO {
     public int getKm() {
         return km;
     }
+    public int getNum() {
+        return num;
+    }
 
     public void setCarName(String carName) {
         this.carName = carName;
